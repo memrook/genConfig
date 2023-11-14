@@ -1,0 +1,10 @@
+{
+  "import":  "./common_step_ose.json",
+  "name":  "OSE Deploy %variable% ГФ skolkovo",
+  "vars":  {
+    "fp_branch":  "${branch_20.1}",
+    "fp_playbooks":  "${pb_ose_main_nodb_nodebug}",
+    "fp_subsystem":  "%variable%",
+    "fp_version": "${%variable%_ver}"
+  }
+}
