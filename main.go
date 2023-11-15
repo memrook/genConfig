@@ -10,9 +10,9 @@ import (
 func main() {
 	var tmplFile, listFile, variable string
 
-	flag.StringVar(&tmplFile, "t", "template.json", "Название файла содержащего шаблон")
-	flag.StringVar(&listFile, "l", "list.txt", "Название файла содержащего список переменных")
-	flag.StringVar(&variable, "v", "%variable%", "Переменная для замены в шлаблоне")
+	flag.StringVar(&tmplFile, "t", "template.json", "name of the file containing the template")
+	flag.StringVar(&listFile, "l", "list.txt", "name of the file containing the variable list")
+	flag.StringVar(&variable, "v", "%variable%", "pattern for replacement")
 	flag.Parse()
 
 	template, err := os.ReadFile(tmplFile)
